@@ -2,8 +2,6 @@ package com.springboot.jasper.model;
 
 import org.springframework.context.annotation.Description;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 @Description(value = "Report Model Definition")
@@ -11,9 +9,9 @@ public class Report implements Serializable {
 
     private static final long serialVersionUID = 7526472295622776147L;
 
-    @NotNull @NotBlank private String firstName;
-    @NotNull @NotBlank private String lastName;
-    @NotNull @NotBlank private String age;
+    private String firstName;
+    private String lastName;
+    private String age;
 
     public String getFirstName() {
         return firstName;
